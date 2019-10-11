@@ -12,4 +12,5 @@ app.register_blueprint(home_bp,url_prefix='/home')
 
 @app.route('/')
 def index():
-	return "Index Page"
+	return render_template("index.html")
+	
